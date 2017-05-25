@@ -1,7 +1,7 @@
 # MVP + Android Architecture Components = 💗
 
-This is a sample project, showing the connection between Android Architecture Components and MVP pattern.
-*The library is coming soon.</br></br>
+This is a sample project, showing the connection between Android Architecture Components and MVP pattern.</br>
+The library is coming soon.</br></br>
 [Android Architecture Components][0]
 
 [0]: https://developer.android.com/topic/libraries/architecture/index.html
