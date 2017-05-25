@@ -2,11 +2,11 @@
 
 This is a sample project, showing the connection between Android Architecture Components and MVP pattern.</br>
 The library is coming soon.</br></br>
-[Android Architecture Components][0]
+[Android Architecture Components][0]</br>
 
 [0]: https://developer.android.com/topic/libraries/architecture/index.html
 
-
+[](files/main.gif)</br>
 ## How it works
 -----------------------
 
