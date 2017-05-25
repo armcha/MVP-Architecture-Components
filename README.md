@@ -26,7 +26,7 @@ Pull requests are more than welcome.
 - **Email**: armcha01@gmail.com
 - **Facebook**: https://web.facebook.com/chatikyana
 - **Twitter**: https://twitter.com/ArmanChatikyan
-- **Google +**: https://plus.google.com/112011638040018774140
+- **Google +**: https://plus.google.com/+ArmanChatikyan
 - **Website**: https://armcha.github.io/
 
 License
