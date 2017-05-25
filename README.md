@@ -6,7 +6,7 @@ The library is coming soon.</br></br>
 
 [0]: https://developer.android.com/topic/libraries/architecture/index.html
 
-[](files/main.gif)</br>
+![](files/main.gif)</br>
 ## How it works
 -----------------------
 
