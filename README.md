@@ -10,12 +10,12 @@ This is a sample project, showing the connection between Android Architecture Co
 ## How it works
 -----------------------
 
-1.Before orientation change
-[](files/screen-1.png)
+**1. Before orientation change**
+![](files/screen-1.png)
 
 -----------------------
-2.After orientation change
-[](files/screen-2.png)
+**2. After orientation change**
+![](files/screen-2.png)
 
 ## More coming soon.
 
