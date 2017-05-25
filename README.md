@@ -15,7 +15,7 @@ This is a sample project, showing the connection between Android Architecture Co
 
 -----------------------
 2.After orientation change
-[](files/screen-21.png)
+[](files/screen-2.png)
 
 ## More coming soon.
 
