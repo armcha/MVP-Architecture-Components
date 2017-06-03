@@ -6,7 +6,7 @@ The library is coming soon.</br></br>
 
 [0]: https://developer.android.com/topic/libraries/architecture/index.html
 
-[](files/main.gif)</br>
+![](files/main.gif)</br>
 ## How it works
 -----------------------
 
@@ -32,7 +32,7 @@ Pull requests are more than welcome.
 License
 --------
 
-      Space Navigation library for Android
+      MVP + Android Architecture Components
       Copyright (c) 2017 Arman Chatikyan (https://github.com/armcha/MVP-Architecture-Components).
 
       Licensed under the Apache License, Version 2.0 (the "License");
