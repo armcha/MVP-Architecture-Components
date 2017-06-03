@@ -4,9 +4,10 @@ This is a sample project, showing the connection between Android Architecture Co
 The library is coming soon.</br></br>
 [Android Architecture Components][0]</br>
 
-Read more about this repository in Medium [1]: https://medium.com/@chatikyan/mvp-android-architecture-components-aef55e15bfe3
+Read more about this repository in [Medium] [1]</br>
 
 [0]: https://developer.android.com/topic/libraries/architecture/index.html
+[1]: https://medium.com/@chatikyan/mvp-android-architecture-components-aef55e15bfe3
 
 ![](files/main.gif)</br>
 ## How it works
