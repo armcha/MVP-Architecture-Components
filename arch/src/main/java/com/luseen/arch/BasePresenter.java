@@ -1,4 +1,4 @@
-package com.luseen.basearch.base;
+package com.luseen.arch;
 
 
 import android.arch.lifecycle.Lifecycle;
@@ -47,7 +47,9 @@ public abstract class BasePresenter<V extends BaseContract.View> implements Life
 
     @Override
     final public Bundle getStateBundle() {
-        return stateBundle == null ? stateBundle = new Bundle() : stateBundle;
+        return stateBundle == null
+                ? stateBundle = new Bundle()
+                : stateBundle;
     }
 
     @CallSuper

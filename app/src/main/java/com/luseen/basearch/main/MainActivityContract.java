@@ -1,6 +1,7 @@
 package com.luseen.basearch.main;
 
-import com.luseen.basearch.base.BaseContract;
+
+import com.luseen.arch.BaseContract;
 
 /**
  * Created by Chatikyan on 20.05.2017.

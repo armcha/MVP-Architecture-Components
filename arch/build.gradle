@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    compile "android.arch.lifecycle:runtime:1.0.0-alpha1"
+    compile "android.arch.lifecycle:extensions:1.0.0-alpha1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha1"
+    compile "android.arch.persistence.room:runtime:1.0.0-alpha1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha1"
+}

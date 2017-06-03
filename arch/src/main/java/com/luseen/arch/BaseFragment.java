@@ -1,4 +1,4 @@
-package com.luseen.basearch.base;
+package com.luseen.arch;
 
 import android.arch.lifecycle.LifecycleFragment;
 import android.arch.lifecycle.ViewModelProviders;

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 
-import com.luseen.basearch.base.BasePresenter;
+import com.luseen.arch.BasePresenter;
 
 
 /**

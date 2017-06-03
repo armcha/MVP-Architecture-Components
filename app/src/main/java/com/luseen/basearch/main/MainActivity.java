@@ -5,8 +5,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
+import com.luseen.arch.BaseActivity;
 import com.luseen.basearch.R;
-import com.luseen.basearch.base.BaseActivity;
 
 public class MainActivity extends BaseActivity<MainActivityContract.View, MainActivityContract.Presenter>
         implements MainActivityContract.View, View.OnClickListener {
