@@ -1,6 +1,7 @@
 package com.luseen.arch;
 
 import android.os.Bundle;
+import android.support.annotation.CallSuper;
 import android.support.annotation.Nullable;
 
 /**
@@ -9,11 +10,12 @@ import android.support.annotation.Nullable;
 
 public abstract class BaseAnnotatedActivity<V extends BaseContract.View, P extends BaseContract.Presenter<V>> extends BaseActivity<V, P> {
 
+    @CallSuper
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         int layoutResId = getClass().getAnnotation(View.class).layout();
-        if (layoutResId != View.LAYOUT_NOT_DEFINED)
+        if (layoutResId != Constants.LAYOUT_NOT_DEFINED)
             setContentView(layoutResId);
     }
 
