@@ -9,10 +9,10 @@ import com.luseen.arch.BaseContract;
 public interface SecondActivityContract {
 
     interface View extends BaseContract.View{
-        void showSomething();
+        void openDetailFragment();
     }
 
     interface Presenter extends BaseContract.Presenter<View>{
-        void doSomeWork();
+
     }
 }

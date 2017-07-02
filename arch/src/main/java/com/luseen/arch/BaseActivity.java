@@ -24,12 +24,16 @@ public abstract class BaseActivity<V extends BaseContract.View, P extends BaseCo
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         BaseViewModel<V, P> viewModel = ViewModelProviders.of(this).get(BaseViewModel.class);
+        boolean isPresenterCreated = false;
         if (viewModel.getPresenter() == null) {
             viewModel.setPresenter(initPresenter());
+            isPresenterCreated = true;
         }
         presenter = viewModel.getPresenter();
         presenter.attachLifecycle(getLifecycle());
         presenter.attachView((V) this);
+        if (isPresenterCreated)
+            presenter.onPresenterCreated();
     }
 
     @Override

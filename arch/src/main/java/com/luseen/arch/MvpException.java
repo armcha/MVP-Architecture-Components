@@ -4,21 +4,17 @@ package com.luseen.arch;
  * Created by Chatikyan on 01.07.2017.
  */
 
-public class MvpException extends Exception {
+class MvpException extends RuntimeException {
 
-    public MvpException(String message) {
+    MvpException(String message) {
         super(message);
     }
 
-    public MvpException(String message, Throwable cause) {
+    MvpException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public MvpException(Throwable cause) {
+    MvpException(Throwable cause) {
         super(cause);
-    }
-
-    public MvpException() {
-        super();
     }
 }

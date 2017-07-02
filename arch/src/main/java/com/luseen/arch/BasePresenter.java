@@ -5,6 +5,7 @@ import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleObserver;
 import android.os.Bundle;
 import android.support.annotation.CallSuper;
+import android.support.annotation.Nullable;
 
 /**
  * Created by Chatikyan on 20.05.2017.
@@ -15,6 +16,7 @@ public abstract class BasePresenter<V extends BaseContract.View> implements Life
     private Bundle stateBundle;
     private V view;
 
+    @Nullable
     @Override
     final public V getView() {
         return view;
@@ -58,5 +60,10 @@ public abstract class BasePresenter<V extends BaseContract.View> implements Life
         if (stateBundle != null && !stateBundle.isEmpty()) {
             stateBundle.clear();
         }
+    }
+
+    @Override
+    public void onPresenterCreated() {
+        //NO-OP
     }
 }

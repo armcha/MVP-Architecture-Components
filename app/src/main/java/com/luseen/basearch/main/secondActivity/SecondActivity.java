@@ -1,24 +1,23 @@
 package com.luseen.basearch.main.secondActivity;
 
-import android.os.Bundle;
-import android.util.Log;
-
 import com.luseen.arch.BaseAnnotatedActivity;
-import com.luseen.arch.View;
+import com.luseen.arch.Viewable;
 import com.luseen.basearch.R;
+import com.luseen.basearch.main.fragment.DetailFragment;
+import com.luseen.basearch.main.second_fragment.SecondFragment;
 
-@View(presenter = SecondActivityPresenter.class, layout = R.layout.activity_second)
+@Viewable(presenter = SecondActivityPresenter.class, layout = R.layout.activity_second)
 public class SecondActivity extends BaseAnnotatedActivity<SecondActivityContract.View, SecondActivityContract.Presenter>
         implements SecondActivityContract.View {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        presenter.doSomeWork();
-    }
 
     @Override
-    public void showSomething() {
-        Log.e("showSomething ", "showSomething");
+    public void openDetailFragment() {
+        if (getSupportFragmentManager().findFragmentById(R.id.container) == null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.container, new SecondFragment())
+                    .commit();
+        }
     }
 }

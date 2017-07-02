@@ -30,6 +30,8 @@ public interface BaseContract {
 
         boolean isViewAttached();
 
+        void onPresenterCreated();
+
         void onPresenterDestroy();
     }
 }

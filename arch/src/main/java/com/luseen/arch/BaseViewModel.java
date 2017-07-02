@@ -1,6 +1,7 @@
 package com.luseen.arch;
 
 import android.arch.lifecycle.ViewModel;
+import android.util.Log;
 
 /**
  * Created by Chatikyan on 20.05.2017.

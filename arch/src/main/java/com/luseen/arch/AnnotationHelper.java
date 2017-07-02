@@ -1,22 +1,18 @@
 package com.luseen.arch;
 
-import android.util.Log;
-
 /**
  * Created by Chatikyan on 29.06.2017.
  */
 
 class AnnotationHelper {
 
-    static BaseContract.Presenter createPresenter(Class<? extends BaseAnnotatedActivity> annotatedClass) {
+    static BaseContract.Presenter createPresenter(Class<?> annotatedClass) {
         try {
-            return annotatedClass.getAnnotation(View.class).presenter().newInstance();
+            return annotatedClass.getAnnotation(Viewable.class).presenter().newInstance();
         } catch (InstantiationException e) {
-            Log.e(Constants.TAG, e.getMessage());
+            throw new MvpException("Cannot create an instance of " + annotatedClass, e);
         } catch (IllegalAccessException e) {
-            Log.e(Constants.TAG, e.getMessage());
+            throw new MvpException("Cannot create an instance of " + annotatedClass, e);
         }
-        Log.e(Constants.TAG, "Can't access to presenter class -" + annotatedClass.getName());
-        return null;
     }
 }
