@@ -15,7 +15,7 @@ public abstract class BaseAnnotatedActivity<V extends BaseContract.View, P exten
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         int layoutResId = getClass().getAnnotation(Viewable.class).layout();
-        if (layoutResId != Constants.LAYOUT_NOT_DEFINED)
+        if (layoutResId != Viewable.LAYOUT_NOT_DEFINED)
             setContentView(layoutResId);
     }
 

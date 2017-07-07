@@ -10,10 +10,12 @@ import com.luseen.basearch.main.fragment.DetailContract;
 public interface SecondFragmentContract {
 
     interface View extends BaseContract.View{
+
         void showSomething();
     }
 
     interface Presenter extends BaseContract.Presenter<View>{
+
         void doSomeWork();
     }
 }

@@ -16,7 +16,6 @@ public abstract class BasePresenter<V extends BaseContract.View> implements Life
     private Bundle stateBundle;
     private V view;
 
-    @Nullable
     @Override
     final public V getView() {
         return view;

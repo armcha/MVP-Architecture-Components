@@ -12,8 +12,9 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Viewable {
+    int LAYOUT_NOT_DEFINED = -1;
 
     Class<? extends BasePresenter> presenter();
 
-    int layout() default Constants.LAYOUT_NOT_DEFINED;
+    int layout() default LAYOUT_NOT_DEFINED;
 }

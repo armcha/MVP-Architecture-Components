@@ -1,6 +1,7 @@
 package com.luseen.basearch.main.secondActivity;
 
 import com.luseen.arch.BaseContract;
+import com.luseen.arch.BaseLoadingContract;
 
 /**
  * Created by Chatikyan on 29.06.2017.
@@ -8,7 +9,7 @@ import com.luseen.arch.BaseContract;
 
 public interface SecondActivityContract {
 
-    interface View extends BaseContract.View{
+    interface View extends BaseLoadingContract.View{
         void openDetailFragment();
     }
 
